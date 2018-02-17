@@ -17,6 +17,7 @@
 		C5F195DA2038030C00823EEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F195D82038030C00823EEE /* LaunchScreen.storyboard */; };
 		C5F195E52038030C00823EEE /* Uber_CloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F195E42038030C00823EEE /* Uber_CloneTests.swift */; };
 		C5F195F02038030C00823EEE /* Uber_CloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F195EF2038030C00823EEE /* Uber_CloneUITests.swift */; };
+		C5F195FF203819E000823EEE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F195FE203819E000823EEE /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		C5F195EB2038030C00823EEE /* Uber CloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Uber CloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F195EF2038030C00823EEE /* Uber_CloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uber_CloneUITests.swift; sourceTree = "<group>"; };
 		C5F195F12038030C00823EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5F195FE203819E000823EEE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				C5F195CF2038030C00823EEE /* AppDelegate.swift */,
 				C5F195D12038030C00823EEE /* ViewController.swift */,
+				C5F195FE203819E000823EEE /* LoginViewController.swift */,
 				C5F195D32038030C00823EEE /* Main.storyboard */,
 				C5F195D62038030C00823EEE /* Assets.xcassets */,
 				C5F195D82038030C00823EEE /* LaunchScreen.storyboard */,
@@ -458,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5F195FF203819E000823EEE /* LoginViewController.swift in Sources */,
 				C5F195D22038030C00823EEE /* ViewController.swift in Sources */,
 				C5F195D02038030C00823EEE /* AppDelegate.swift in Sources */,
 			);
