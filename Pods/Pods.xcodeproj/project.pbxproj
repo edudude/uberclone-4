@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		028E31B1D24FAD96BB629951C5D39740 /* Pods-Uber CloneUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8755D9C17FFDC0A987DBB34DC53CEF1C /* Pods-Uber CloneUITests-dummy.m */; };
+		35DBC4C6219A1B06BB4CB47697E3618A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		38DF366B7D1B2D9F56CE094C57C9F196 /* Pods-Uber CloneTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4818BD098A78FA99A933A60821AF99F5 /* Pods-Uber CloneTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E72E40FEACA7DFE2D2DBA267CEDF7E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A2B28E51D5189E07A0EB43B00BD92456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A8E107C373940ED08DDA4302B8E55467 /* Pods-Uber CloneTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D338DE63E8EE5A61CB110AEBCFF43B /* Pods-Uber CloneTests-dummy.m */; };
+		B039A78FBCD41FB4103E47B1C205F9A3 /* Pods-Uber Clone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B2E4FCCB5DA263106A00923804131D /* Pods-Uber Clone-dummy.m */; };
+		F096912606A4E77BF66DA387568C8DED /* Pods-Uber CloneUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF22301AF7C3AB326CE1F685C96F4CFE /* Pods-Uber CloneUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F36BAF50B44066CB6833F79B701F4F9A /* Pods-Uber Clone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA7EF24352A5BB41D7085CA367FB68F /* Pods-Uber Clone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		064A4F272656B0AE2A01E8C569EEC6F3 /* AKFAccountKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFAccountKit.h; path = AccountKit.framework/Headers/AKFAccountKit.h; sourceTree = "<group>"; };
+		0A463F0170E8CFE9A0253D208E24FE7C /* AKFResponseType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFResponseType.h; path = AccountKit.framework/Headers/AKFResponseType.h; sourceTree = "<group>"; };
+		0C7806485CDCF212EEF90B4777A3F8D3 /* Pods-Uber CloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Uber CloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		19B15DAB5B333B728F197592976B626E /* AKFConfiguring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFConfiguring.h; path = AccountKit.framework/Headers/AKFConfiguring.h; sourceTree = "<group>"; };
+		1D5A394A7BDD6D4F43E098DED4B22C65 /* AKFAccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFAccessToken.h; path = AccountKit.framework/Headers/AKFAccessToken.h; sourceTree = "<group>"; };
+		1DA7EF24352A5BB41D7085CA367FB68F /* Pods-Uber Clone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Uber Clone-umbrella.h"; sourceTree = "<group>"; };
+		28FD38BD5B3C07E90C74225F8F013178 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
+		298FB2587F2AA1600862078E24095791 /* Pods-Uber Clone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Uber Clone-frameworks.sh"; sourceTree = "<group>"; };
+		2E086F1974F727CDC7FCC9B364BBBBAF /* AccountKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AccountKit.h; path = AccountKit.framework/Headers/AccountKit.h; sourceTree = "<group>"; };
+		36B5A5AA70AE26825B27B6A9B7198704 /* AKFLoginFlowState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFLoginFlowState.h; path = AccountKit.framework/Headers/AKFLoginFlowState.h; sourceTree = "<group>"; };
+		4490ED1306B9FCE51EB8AB24D6D72D4D /* Pods-Uber CloneTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Uber CloneTests-resources.sh"; sourceTree = "<group>"; };
+		4818BD098A78FA99A933A60821AF99F5 /* Pods-Uber CloneTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Uber CloneTests-umbrella.h"; sourceTree = "<group>"; };
+		491B906E801B6E04713A9521F5FCDA73 /* AKFErrorDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFErrorDetail.h; path = AccountKit.framework/Headers/AKFErrorDetail.h; sourceTree = "<group>"; };
+		4A9A8D369FAD790E1E00C30DE424E4D0 /* Pods-Uber CloneTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Uber CloneTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		51777AFE28527FE12B0B29594F02A2FC /* Pods-Uber CloneUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Uber CloneUITests-resources.sh"; sourceTree = "<group>"; };
+		52E85ED367C7B0E11BED6BB213D426CA /* Pods-Uber Clone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Uber Clone-resources.sh"; sourceTree = "<group>"; };
+		579C72B914A5DCC443EC5BA61FEF4698 /* Pods-Uber CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Uber CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59909D1BB4AD471D2ED8A6A7CDD1F124 /* Pods-Uber Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Uber Clone.release.xcconfig"; sourceTree = "<group>"; };
+		59C6EA30090A2E94022F416D81C0BCA4 /* AKFSkinManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFSkinManager.h; path = AccountKit.framework/Headers/AKFSkinManager.h; sourceTree = "<group>"; };
+		5CAC7B7C688902CA150A85874B2691B3 /* Pods-Uber CloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Uber CloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68D338DE63E8EE5A61CB110AEBCFF43B /* Pods-Uber CloneTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Uber CloneTests-dummy.m"; sourceTree = "<group>"; };
+		6E7DE9B1B8D543F2D8CAF82D262CBE6E /* AKFUIManaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFUIManaging.h; path = AccountKit.framework/Headers/AKFUIManaging.h; sourceTree = "<group>"; };
+		6EA4D263C146D9DB9AB1C82DCC1BAB34 /* AKFButtonType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFButtonType.h; path = AccountKit.framework/Headers/AKFButtonType.h; sourceTree = "<group>"; };
+		710C931EA1AE52DA3F02A2F8C8E82912 /* AKFLoginType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFLoginType.h; path = AccountKit.framework/Headers/AKFLoginType.h; sourceTree = "<group>"; };
+		72552A81D2E585CCAABD2B41907CE79A /* Pods-Uber Clone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Uber Clone.modulemap"; sourceTree = "<group>"; };
+		73FFF41C16F166565B148E5BE2B7B9B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85B2E4FCCB5DA263106A00923804131D /* Pods-Uber Clone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Uber Clone-dummy.m"; sourceTree = "<group>"; };
+		85F0BF9DA88AF65798E8BDDBB69B6868 /* Pods-Uber CloneUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Uber CloneUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8755D9C17FFDC0A987DBB34DC53CEF1C /* Pods-Uber CloneUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Uber CloneUITests-dummy.m"; sourceTree = "<group>"; };
+		8819BB64A19C88CDD6EB592144C76E51 /* Pods-Uber Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Uber Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		8AE5C9577CC750E542DD97E0A558CE2B /* AccountKitStrings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = AccountKitStrings.bundle; sourceTree = "<group>"; };
+		928A8AB94883EBEC484A81BAACCA56CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93C4FAB4290693FF6636A1C0CD392B64 /* AKFSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFSettings.h; path = AccountKit.framework/Headers/AKFSettings.h; sourceTree = "<group>"; };
+		94DF234674DB8A02E0813BDA895C07B5 /* Pods-Uber Clone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Uber Clone-acknowledgements.plist"; sourceTree = "<group>"; };
+		99AB14B09F29822A06C40E096F39E364 /* Pods-Uber CloneTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Uber CloneTests.modulemap"; sourceTree = "<group>"; };
+		9A14CF04584AF7E3FA309C3F1088A58E /* Pods-Uber CloneTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Uber CloneTests-frameworks.sh"; sourceTree = "<group>"; };
+		A8DF40589CE5B3EEBC5A9E6E80B6BAFE /* AKFUIManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFUIManager.h; path = AccountKit.framework/Headers/AKFUIManager.h; sourceTree = "<group>"; };
+		B76E384566AA975F09EF298159F028D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B87C26C77B54928FB2ACBCD31E31F763 /* AKFPhoneNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFPhoneNumber.h; path = AccountKit.framework/Headers/AKFPhoneNumber.h; sourceTree = "<group>"; };
+		BE485AADAEC2DB5F256451D3AA1D24EB /* Pods_Uber_CloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Uber_CloneTests.framework; path = "Pods-Uber CloneTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C119D4706A62B75CBA124F6407B8C142 /* Pods-Uber CloneUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Uber CloneUITests.modulemap"; sourceTree = "<group>"; };
+		C439CBD0990F9BC1FF0EFDD6C1DBB270 /* Pods-Uber Clone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Uber Clone-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5081C289384599582C4DF438DF18CC3 /* Pods-Uber CloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Uber CloneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C951F8B4F013A9B8E63F035F6A67B830 /* Pods_Uber_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Uber_Clone.framework; path = "Pods-Uber Clone.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF40352D17023B8C27C511EDE443EC4A /* AKFTextPosition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFTextPosition.h; path = AccountKit.framework/Headers/AKFTextPosition.h; sourceTree = "<group>"; };
+		D10545119EFEF43262303E9FD0E6746D /* Pods-Uber CloneTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Uber CloneTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D31C786C3358989240675BA03DD1096D /* AKFError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFError.h; path = AccountKit.framework/Headers/AKFError.h; sourceTree = "<group>"; };
+		D95D4FDEC1ACB373D703A36C8EEDFDF3 /* Pods_Uber_CloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Uber_CloneUITests.framework; path = "Pods-Uber CloneUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E413C8AC6E7AF9DE76102C9EDD7708CF /* AKFAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFAccount.h; path = AccountKit.framework/Headers/AKFAccount.h; sourceTree = "<group>"; };
+		EAAD1A15E9869088F66563D053709E79 /* AKFViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFViewController.h; path = AccountKit.framework/Headers/AKFViewController.h; sourceTree = "<group>"; };
+		EB877FDF011A1B3459AD2174EEF8337A /* Pods-Uber CloneUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Uber CloneUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EF22301AF7C3AB326CE1F685C96F4CFE /* Pods-Uber CloneUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Uber CloneUITests-umbrella.h"; sourceTree = "<group>"; };
+		F1AA44DE579C0474234463AD75DDFB64 /* AKFTheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AKFTheme.h; path = AccountKit.framework/Headers/AKFTheme.h; sourceTree = "<group>"; };
+		F408076F342B1FD138F272FF49277EC2 /* Pods-Uber CloneUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Uber CloneUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7137D8D1E7A39D7EE9F298C8D79CE981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DBC4C6219A1B06BB4CB47697E3618A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA1205A865E7750A2612BFAF1399923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E72E40FEACA7DFE2D2DBA267CEDF7E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAD532AAED8FBA118CDDD2D1F3757A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B28E51D5189E07A0EB43B00BD92456 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C429A7FF12AF72257D2252BC86E8C54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28FD38BD5B3C07E90C74225F8F013178 /* AccountKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F54851B9B72CBEC19E38B5D1DDD46EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C951F8B4F013A9B8E63F035F6A67B830 /* Pods_Uber_Clone.framework */,
+				BE485AADAEC2DB5F256451D3AA1D24EB /* Pods_Uber_CloneTests.framework */,
+				D95D4FDEC1ACB373D703A36C8EEDFDF3 /* Pods_Uber_CloneUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31B1B712D665ECF39627D8E5DC8A0C54 /* Pods-Uber CloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				928A8AB94883EBEC484A81BAACCA56CE /* Info.plist */,
+				99AB14B09F29822A06C40E096F39E364 /* Pods-Uber CloneTests.modulemap */,
+				D10545119EFEF43262303E9FD0E6746D /* Pods-Uber CloneTests-acknowledgements.markdown */,
+				4A9A8D369FAD790E1E00C30DE424E4D0 /* Pods-Uber CloneTests-acknowledgements.plist */,
+				68D338DE63E8EE5A61CB110AEBCFF43B /* Pods-Uber CloneTests-dummy.m */,
+				9A14CF04584AF7E3FA309C3F1088A58E /* Pods-Uber CloneTests-frameworks.sh */,
+				4490ED1306B9FCE51EB8AB24D6D72D4D /* Pods-Uber CloneTests-resources.sh */,
+				4818BD098A78FA99A933A60821AF99F5 /* Pods-Uber CloneTests-umbrella.h */,
+				579C72B914A5DCC443EC5BA61FEF4698 /* Pods-Uber CloneTests.debug.xcconfig */,
+				0C7806485CDCF212EEF90B4777A3F8D3 /* Pods-Uber CloneTests.release.xcconfig */,
+			);
+			name = "Pods-Uber CloneTests";
+			path = "Target Support Files/Pods-Uber CloneTests";
+			sourceTree = "<group>";
+		};
+		79AA41B8B172619FAF6B10DDB8808485 /* Pods-Uber CloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B76E384566AA975F09EF298159F028D2 /* Info.plist */,
+				C119D4706A62B75CBA124F6407B8C142 /* Pods-Uber CloneUITests.modulemap */,
+				F408076F342B1FD138F272FF49277EC2 /* Pods-Uber CloneUITests-acknowledgements.markdown */,
+				EB877FDF011A1B3459AD2174EEF8337A /* Pods-Uber CloneUITests-acknowledgements.plist */,
+				8755D9C17FFDC0A987DBB34DC53CEF1C /* Pods-Uber CloneUITests-dummy.m */,
+				85F0BF9DA88AF65798E8BDDBB69B6868 /* Pods-Uber CloneUITests-frameworks.sh */,
+				51777AFE28527FE12B0B29594F02A2FC /* Pods-Uber CloneUITests-resources.sh */,
+				EF22301AF7C3AB326CE1F685C96F4CFE /* Pods-Uber CloneUITests-umbrella.h */,
+				5CAC7B7C688902CA150A85874B2691B3 /* Pods-Uber CloneUITests.debug.xcconfig */,
+				C5081C289384599582C4DF438DF18CC3 /* Pods-Uber CloneUITests.release.xcconfig */,
+			);
+			name = "Pods-Uber CloneUITests";
+			path = "Target Support Files/Pods-Uber CloneUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9FE3E0D77588413C315B5CED3A093138 /* Pods */,
+				0F54851B9B72CBEC19E38B5D1DDD46EC /* Products */,
+				F481C145D757083DE6263A0C64BD650F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9FE3E0D77588413C315B5CED3A093138 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4019987A14FD1BA53E86B1FFA6E1990 /* AccountKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B63A86D3E91D5BA7B2CDAAFDC9AE6BED /* Pods-Uber Clone */ = {
+			isa = PBXGroup;
+			children = (
+				73FFF41C16F166565B148E5BE2B7B9B6 /* Info.plist */,
+				72552A81D2E585CCAABD2B41907CE79A /* Pods-Uber Clone.modulemap */,
+				C439CBD0990F9BC1FF0EFDD6C1DBB270 /* Pods-Uber Clone-acknowledgements.markdown */,
+				94DF234674DB8A02E0813BDA895C07B5 /* Pods-Uber Clone-acknowledgements.plist */,
+				85B2E4FCCB5DA263106A00923804131D /* Pods-Uber Clone-dummy.m */,
+				298FB2587F2AA1600862078E24095791 /* Pods-Uber Clone-frameworks.sh */,
+				52E85ED367C7B0E11BED6BB213D426CA /* Pods-Uber Clone-resources.sh */,
+				1DA7EF24352A5BB41D7085CA367FB68F /* Pods-Uber Clone-umbrella.h */,
+				8819BB64A19C88CDD6EB592144C76E51 /* Pods-Uber Clone.debug.xcconfig */,
+				59909D1BB4AD471D2ED8A6A7CDD1F124 /* Pods-Uber Clone.release.xcconfig */,
+			);
+			name = "Pods-Uber Clone";
+			path = "Target Support Files/Pods-Uber Clone";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDAAAAD964135691881ECC91D55AC907 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AE5C9577CC750E542DD97E0A558CE2B /* AccountKitStrings.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D4019987A14FD1BA53E86B1FFA6E1990 /* AccountKit */ = {
+			isa = PBXGroup;
+			children = (
+				2E086F1974F727CDC7FCC9B364BBBBAF /* AccountKit.h */,
+				1D5A394A7BDD6D4F43E098DED4B22C65 /* AKFAccessToken.h */,
+				E413C8AC6E7AF9DE76102C9EDD7708CF /* AKFAccount.h */,
+				064A4F272656B0AE2A01E8C569EEC6F3 /* AKFAccountKit.h */,
+				6EA4D263C146D9DB9AB1C82DCC1BAB34 /* AKFButtonType.h */,
+				19B15DAB5B333B728F197592976B626E /* AKFConfiguring.h */,
+				D31C786C3358989240675BA03DD1096D /* AKFError.h */,
+				491B906E801B6E04713A9521F5FCDA73 /* AKFErrorDetail.h */,
+				36B5A5AA70AE26825B27B6A9B7198704 /* AKFLoginFlowState.h */,
+				710C931EA1AE52DA3F02A2F8C8E82912 /* AKFLoginType.h */,
+				B87C26C77B54928FB2ACBCD31E31F763 /* AKFPhoneNumber.h */,
+				0A463F0170E8CFE9A0253D208E24FE7C /* AKFResponseType.h */,
+				93C4FAB4290693FF6636A1C0CD392B64 /* AKFSettings.h */,
+				59C6EA30090A2E94022F416D81C0BCA4 /* AKFSkinManager.h */,
+				CF40352D17023B8C27C511EDE443EC4A /* AKFTextPosition.h */,
+				F1AA44DE579C0474234463AD75DDFB64 /* AKFTheme.h */,
+				A8DF40589CE5B3EEBC5A9E6E80B6BAFE /* AKFUIManager.h */,
+				6E7DE9B1B8D543F2D8CAF82D262CBE6E /* AKFUIManaging.h */,
+				EAAD1A15E9869088F66563D053709E79 /* AKFViewController.h */,
+				0C429A7FF12AF72257D2252BC86E8C54 /* Frameworks */,
+				BDAAAAD964135691881ECC91D55AC907 /* Resources */,
+			);
+			name = AccountKit;
+			path = AccountKit;
+			sourceTree = "<group>";
+		};
+		F481C145D757083DE6263A0C64BD650F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B63A86D3E91D5BA7B2CDAAFDC9AE6BED /* Pods-Uber Clone */,
+				31B1B712D665ECF39627D8E5DC8A0C54 /* Pods-Uber CloneTests */,
+				79AA41B8B172619FAF6B10DDB8808485 /* Pods-Uber CloneUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		840F37581A6A489A0F65D86A67EB534B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F096912606A4E77BF66DA387568C8DED /* Pods-Uber CloneUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF69DC4F71DA2DE3CD565E565DE4EB6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38DF366B7D1B2D9F56CE094C57C9F196 /* Pods-Uber CloneTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61250BCB4E7BA01C6FED808A2426F2E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36BAF50B44066CB6833F79B701F4F9A /* Pods-Uber Clone-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03676B9D9DE56D2A1DA01512EB201A5F /* Pods-Uber Clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F74CE6054D7239A480E7BFB2BF5DF9 /* Build configuration list for PBXNativeTarget "Pods-Uber Clone" */;
+			buildPhases = (
+				AC29D6303966C5CD7CFAD880676A184B /* Sources */,
+				AFAD532AAED8FBA118CDDD2D1F3757A5 /* Frameworks */,
+				B61250BCB4E7BA01C6FED808A2426F2E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Uber Clone";
+			productName = "Pods-Uber Clone";
+			productReference = C951F8B4F013A9B8E63F035F6A67B830 /* Pods_Uber_Clone.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9420051134BF6C446AA0D81224A8BA21 /* Pods-Uber CloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8474C103520FF479814CABF52B9F5C34 /* Build configuration list for PBXNativeTarget "Pods-Uber CloneUITests" */;
+			buildPhases = (
+				3D02D8A105C0A728B3C8DDD40A674BCB /* Sources */,
+				7137D8D1E7A39D7EE9F298C8D79CE981 /* Frameworks */,
+				840F37581A6A489A0F65D86A67EB534B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Uber CloneUITests";
+			productName = "Pods-Uber CloneUITests";
+			productReference = D95D4FDEC1ACB373D703A36C8EEDFDF3 /* Pods_Uber_CloneUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA94FCC7C2596D53F386C5095ED6550F /* Pods-Uber CloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BD917DE4F270CF1A7A60B2E971D913 /* Build configuration list for PBXNativeTarget "Pods-Uber CloneTests" */;
+			buildPhases = (
+				C1FFB528259DFB7A7153C27AAB81CFD4 /* Sources */,
+				9BA1205A865E7750A2612BFAF1399923 /* Frameworks */,
+				AF69DC4F71DA2DE3CD565E565DE4EB6F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Uber CloneTests";
+			productName = "Pods-Uber CloneTests";
+			productReference = BE485AADAEC2DB5F256451D3AA1D24EB /* Pods_Uber_CloneTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0F54851B9B72CBEC19E38B5D1DDD46EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03676B9D9DE56D2A1DA01512EB201A5F /* Pods-Uber Clone */,
+				AA94FCC7C2596D53F386C5095ED6550F /* Pods-Uber CloneTests */,
+				9420051134BF6C446AA0D81224A8BA21 /* Pods-Uber CloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D02D8A105C0A728B3C8DDD40A674BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028E31B1D24FAD96BB629951C5D39740 /* Pods-Uber CloneUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC29D6303966C5CD7CFAD880676A184B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B039A78FBCD41FB4103E47B1C205F9A3 /* Pods-Uber Clone-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1FFB528259DFB7A7153C27AAB81CFD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E107C373940ED08DDA4302B8E55467 /* Pods-Uber CloneTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1B48A83B51949049234CEF3322328EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7806485CDCF212EEF90B4777A3F8D3 /* Pods-Uber CloneTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Uber CloneTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Uber CloneTests/Pods-Uber CloneTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Uber_CloneTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		323A24856F1A4871A780301AF5C02A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		868F6C86A3C6E5FC62ED4897D2B18ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CAC7B7C688902CA150A85874B2691B3 /* Pods-Uber CloneUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Uber CloneUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Uber CloneUITests/Pods-Uber CloneUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Uber_CloneUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88898FFC9369E5E167B8D493918831BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59909D1BB4AD471D2ED8A6A7CDD1F124 /* Pods-Uber Clone.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Uber Clone/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Uber Clone/Pods-Uber Clone.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Uber_Clone;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7ECFA019E93CFEBAF4142BEB8823AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5081C289384599582C4DF438DF18CC3 /* Pods-Uber CloneUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Uber CloneUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Uber CloneUITests/Pods-Uber CloneUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Uber_CloneUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA33F186435244FD0FD5B7325332656C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F2D0B4268F11AA194094FE954DA28407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8819BB64A19C88CDD6EB592144C76E51 /* Pods-Uber Clone.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Uber Clone/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Uber Clone/Pods-Uber Clone.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Uber_Clone;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F97AB81018C9E6DBAEFCBDB2F9319FB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 579C72B914A5DCC443EC5BA61FEF4698 /* Pods-Uber CloneTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Uber CloneTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Uber CloneTests/Pods-Uber CloneTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Uber_CloneTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323A24856F1A4871A780301AF5C02A2A /* Debug */,
+				CA33F186435244FD0FD5B7325332656C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F74CE6054D7239A480E7BFB2BF5DF9 /* Build configuration list for PBXNativeTarget "Pods-Uber Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D0B4268F11AA194094FE954DA28407 /* Debug */,
+				88898FFC9369E5E167B8D493918831BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8474C103520FF479814CABF52B9F5C34 /* Build configuration list for PBXNativeTarget "Pods-Uber CloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				868F6C86A3C6E5FC62ED4897D2B18ACF /* Debug */,
+				B7ECFA019E93CFEBAF4142BEB8823AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BD917DE4F270CF1A7A60B2E971D913 /* Build configuration list for PBXNativeTarget "Pods-Uber CloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F97AB81018C9E6DBAEFCBDB2F9319FB0 /* Debug */,
+				1B48A83B51949049234CEF3322328EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
