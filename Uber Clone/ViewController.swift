@@ -9,7 +9,7 @@
 import UIKit
 import AccountKit
 
-class ViewController: UIViewController, AKFViewControllerDelegate  {
+class ViewController: UIViewController{
 
     fileprivate var accountKit = AKFAccountKit(responseType: .accessToken)
     fileprivate var pendingLoginViewController: AKFViewController? = nil
@@ -27,7 +27,7 @@ class ViewController: UIViewController, AKFViewControllerDelegate  {
         
         if showAccountOnAppear {
             showAccountOnAppear = false
-            //presentWithSegueIdentifier("showAccount", animated: animated)
+            //presentWithSegueIdentifier("showAccount", animated: true)
             print(accountKit.currentAccessToken?.tokenString ?? "no access token")
         } else if let viewController = pendingLoginViewController {
             prepareLoginViewController(viewController)
@@ -37,18 +37,7 @@ class ViewController: UIViewController, AKFViewControllerDelegate  {
             }
         }
     }
-    
-    //===============for account kit================
-    func viewController(_ viewController: (UIViewController & AKFViewController)!, didCompleteLoginWith accessToken: AKFAccessToken!, state: String!) {
-        //presentWithSegueIdentifier("showAccount", animated: false)
-        print(accessToken.tokenString)
-        
-    }
-    
-    func viewController(_ viewController: (UIViewController & AKFViewController)!, didFailWithError error: Error!) {
-        print("\(viewController) did fail with error: \(error)")
-    }
-    
+
     
     func prepareLoginViewController(_ loginViewController: AKFViewController) {
         loginViewController.delegate = self
@@ -56,7 +45,7 @@ class ViewController: UIViewController, AKFViewControllerDelegate  {
     
     func presentWithSegueIdentifier(_ segueIdentifier: String, animated: Bool) {
         if animated {
-            performSegue(withIdentifier: segueIdentifier, sender: nil)
+            //performSegue(withIdentifier: segueIdentifier, sender: nil)
         } else {
             UIView.performWithoutAnimation {
                 self.performSegue(withIdentifier: segueIdentifier, sender: nil)
@@ -68,14 +57,30 @@ class ViewController: UIViewController, AKFViewControllerDelegate  {
     
     // MARK: - Navigation
     @IBAction func loginWithPhone(_ sender: Any) {
+        let accountViewController = storyboard?.instantiateViewController(withIdentifier: "accountScreen") as! AccountViewController
         
+        present(accountViewController, animated: true, completion: nil)
+        /**
         if let viewController = accountKit.viewControllerForPhoneLogin(with: nil, state: nil) as AKFViewController? {
             prepareLoginViewController(viewController)
             if let viewController = viewController as? UIViewController {
                 present(viewController, animated: true, completion: nil)
             }
-        }
+        }**/
     }
     
+}
+
+extension ViewController :  AKFViewControllerDelegate {
+    
+    func viewController(_ viewController: (UIViewController & AKFViewController)!, didCompleteLoginWith accessToken: AKFAccessToken!, state: String!) {
+        presentWithSegueIdentifier("showAccount", animated: true)
+        print(accessToken.tokenString)
+        
+    }
+    
+    func viewController(_ viewController: (UIViewController & AKFViewController)!, didFailWithError error: Error!) {
+        print("\(viewController) did fail with error: \(error)")
+    }
 }
 
