@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TransitionCoordinator: NSObject, UINavigationControllerDelegate {
+class AnimationDelegate: NSObject, UINavigationControllerDelegate {
     
     
     
@@ -16,6 +16,13 @@ class TransitionCoordinator: NSObject, UINavigationControllerDelegate {
                               animationControllerFor operation: UINavigationControllerOperation,
                               from fromVC: UIViewController,
                               to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return CircularTransition()
+        print(operation.rawValue)
+        if operation==UINavigationControllerOperation.pop {
+            return nil
+        } else {
+            return CircularTransitionPush()
+            
+        }
+        
     }
 }

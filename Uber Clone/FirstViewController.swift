@@ -8,20 +8,15 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, CircleTransitionable {
+class FirstViewController: UIViewController {
   
-    var triggerButton: UIButton
-    
-    var contentTextView: UITextView
-    
-    var mainView: UIView
-    
+    let animationDelegate = AnimationDelegate()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let loginViewController = storyboard?.instantiateViewController(withIdentifier: "loginScreen") as! ViewController
-        
-        present(loginViewController, animated: true, completion: nil)
+        self.navigationController?.delegate = animationDelegate as UINavigationControllerDelegate
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +26,11 @@ class FirstViewController: UIViewController, CircleTransitionable {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        self.navigationController?.delegate = transitionCoordinator as? UINavigationControllerDelegate
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let loginViewController = storyboard?.instantiateViewController(withIdentifier: "loginScreen") as! ViewController
+        navigationController?.pushViewController(loginViewController, animated: true)
     }
     /*
     // MARK: - Navigation
@@ -42,5 +41,5 @@ class FirstViewController: UIViewController, CircleTransitionable {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
