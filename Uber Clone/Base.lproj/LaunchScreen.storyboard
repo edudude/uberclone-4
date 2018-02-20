@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uber icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="H6B-nd-IWQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uber icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="H6B-nd-IWQ">
                                 <rect key="frame" x="108" y="296" width="158" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H6B-nd-IWQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="276" id="2WO-fO-eUT"/>
+                            <constraint firstItem="H6B-nd-IWQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="B1J-se-DMB"/>
+                            <constraint firstItem="H6B-nd-IWQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="PSu-x3-Puc"/>
+                            <constraint firstItem="H6B-nd-IWQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QQc-Tt-D7D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

@@ -9,12 +9,17 @@
 import UIKit
 import AccountKit
 
-class ViewController: UIViewController{
+class LoginViewController: UIViewController{
 
     fileprivate var accountKit = AKFAccountKit(responseType: .accessToken)
     fileprivate var pendingLoginViewController: AKFViewController? = nil
     fileprivate var showAccountOnAppear = false
     
+    @IBOutlet weak var uberTextIcon: UIImageView!
+    @IBOutlet weak var uberTextIconContainer: UIView!
+    
+    @IBOutlet weak var backgroundTeal: UIView!
+    @IBOutlet weak var bottombar: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -71,7 +76,7 @@ class ViewController: UIViewController{
     
 }
 
-extension ViewController :  AKFViewControllerDelegate {
+extension LoginViewController :  AKFViewControllerDelegate {
     
     func viewController(_ viewController: (UIViewController & AKFViewController)!, didCompleteLoginWith accessToken: AKFAccessToken!, state: String!) {
         presentWithSegueIdentifier("showAccount", animated: true)

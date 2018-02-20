@@ -10,13 +10,14 @@
 		322EB43462754C83AA02F5A5 /* Pods_Uber_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B3563F5F9F91E2DE331193 /* Pods_Uber_Clone.framework */; };
 		4F0522E8D1683CB00BCB280C /* Pods_Uber_CloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8588FA7810F5DB0F5C0A2873 /* Pods_Uber_CloneUITests.framework */; };
 		95C14F55A9339EBCD093686B /* Pods_Uber_CloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572557E47372E7F0CCEC7933 /* Pods_Uber_CloneTests.framework */; };
+		C5C3C3D7203C250000671E8A /* ubertexticon.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C3C3D6203C250000671E8A /* ubertexticon.png */; };
 		C5EBBF9E203AB68F00462CE2 /* uber icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C5EBBF9D203AB68F00462CE2 /* uber icon.png */; };
 		C5EBBFA0203ABCCE00462CE2 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBBF9F203ABCCE00462CE2 /* AccountViewController.swift */; };
 		C5EBBFA6203AF53400462CE2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBBFA5203AF53400462CE2 /* FirstViewController.swift */; };
 		C5EBBFA8203AF75300462CE2 /* AnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBBFA7203AF75300462CE2 /* AnimationDelegate.swift */; };
 		C5EBBFAE203B48FE00462CE2 /* CircularTransitionPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBBFAD203B48FE00462CE2 /* CircularTransitionPush.swift */; };
 		C5F195D02038030C00823EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F195CF2038030C00823EEE /* AppDelegate.swift */; };
-		C5F195D22038030C00823EEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F195D12038030C00823EEE /* ViewController.swift */; };
+		C5F195D22038030C00823EEE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F195D12038030C00823EEE /* LoginViewController.swift */; };
 		C5F195D52038030C00823EEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F195D32038030C00823EEE /* Main.storyboard */; };
 		C5F195D72038030C00823EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5F195D62038030C00823EEE /* Assets.xcassets */; };
 		C5F195DA2038030C00823EEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5F195D82038030C00823EEE /* LaunchScreen.storyboard */; };
@@ -51,6 +52,7 @@
 		8588FA7810F5DB0F5C0A2873 /* Pods_Uber_CloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_CloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC4C85F7E763876709E0390 /* Pods-Uber CloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber CloneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber CloneTests/Pods-Uber CloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE3F02DE4214D16E7D76F262 /* Pods-Uber CloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber CloneUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uber CloneUITests/Pods-Uber CloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5C3C3D6203C250000671E8A /* ubertexticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ubertexticon.png; sourceTree = "<group>"; };
 		C5EBBF9D203AB68F00462CE2 /* uber icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uber icon.png"; sourceTree = "<group>"; };
 		C5EBBF9F203ABCCE00462CE2 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		C5EBBFA5203AF53400462CE2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		C5EBBFAD203B48FE00462CE2 /* CircularTransitionPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransitionPush.swift; sourceTree = "<group>"; };
 		C5F195CC2038030C00823EEE /* Uber Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uber Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F195CF2038030C00823EEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5F195D12038030C00823EEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5F195D12038030C00823EEE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C5F195D42038030C00823EEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5F195D62038030C00823EEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5F195D92038030C00823EEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,13 +150,14 @@
 			isa = PBXGroup;
 			children = (
 				C5F195CF2038030C00823EEE /* AppDelegate.swift */,
-				C5F195D12038030C00823EEE /* ViewController.swift */,
+				C5F195D12038030C00823EEE /* LoginViewController.swift */,
 				C5F195D32038030C00823EEE /* Main.storyboard */,
 				C5EBBFA5203AF53400462CE2 /* FirstViewController.swift */,
 				C5F195D62038030C00823EEE /* Assets.xcassets */,
 				C5F195D82038030C00823EEE /* LaunchScreen.storyboard */,
 				C5F195DB2038030C00823EEE /* Info.plist */,
 				C5EBBF9D203AB68F00462CE2 /* uber icon.png */,
+				C5C3C3D6203C250000671E8A /* ubertexticon.png */,
 				C5EBBF9F203ABCCE00462CE2 /* AccountViewController.swift */,
 				C5EBBFA7203AF75300462CE2 /* AnimationDelegate.swift */,
 				C5EBBFAD203B48FE00462CE2 /* CircularTransitionPush.swift */,
@@ -300,6 +303,7 @@
 				C5F195D72038030C00823EEE /* Assets.xcassets in Resources */,
 				C5F195D52038030C00823EEE /* Main.storyboard in Resources */,
 				C5EBBF9E203AB68F00462CE2 /* uber icon.png in Resources */,
+				C5C3C3D7203C250000671E8A /* ubertexticon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,9 +330,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Uber Clone/Pods-Uber Clone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Fluent/Fluent.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fluent.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -475,7 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5EBBFA6203AF53400462CE2 /* FirstViewController.swift in Sources */,
-				C5F195D22038030C00823EEE /* ViewController.swift in Sources */,
+				C5F195D22038030C00823EEE /* LoginViewController.swift in Sources */,
 				C5F195D02038030C00823EEE /* AppDelegate.swift in Sources */,
 				C5EBBFA8203AF75300462CE2 /* AnimationDelegate.swift in Sources */,
 				C5EBBFA0203ABCCE00462CE2 /* AccountViewController.swift in Sources */,

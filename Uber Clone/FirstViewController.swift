@@ -29,7 +29,7 @@ class FirstViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let loginViewController = storyboard?.instantiateViewController(withIdentifier: "loginScreen") as! ViewController
+        let loginViewController = storyboard?.instantiateViewController(withIdentifier: "loginScreen") as! LoginViewController
         navigationController?.pushViewController(loginViewController, animated: true)
     }
     /*
