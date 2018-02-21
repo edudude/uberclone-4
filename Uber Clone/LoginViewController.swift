@@ -8,6 +8,7 @@
 
 import UIKit
 import AccountKit
+import Alamofire
 
 class LoginViewController: UIViewController{
 
@@ -61,8 +62,7 @@ class LoginViewController: UIViewController{
         uberTextIconContainer.center.x = view.center.x
         loginButton.center.x = view.center.x
         loginButton.center.y = bottombar.frame.height/2
-        nextButton.center.y = bottombar.frame.height - 40
-        nextButton.center.x = bottombar.frame.width - 50
+        nextButton.frame = CGRect(x: view.frame.width - 120, y: view.frame.height - 60, width: 100, height: 50)
         
         enterName.frame = CGRect(x: 10, y: 80, width: bottombar.frame.width - 20, height: 50)
         phoneNumberLabel.frame = CGRect(x: 10, y: 10, width: bottombar.frame.width - 20, height: 30)
@@ -117,13 +117,18 @@ class LoginViewController: UIViewController{
         let accountViewController = storyboard?.instantiateViewController(withIdentifier: "accountScreen") as! AccountViewController
         
         present(accountViewController, animated: true, completion: nil)
-        /**
-        if let viewController = accountKit.viewControllerForPhoneLogin(with: nil, state: nil) as AKFViewController? {
-            prepareLoginViewController(viewController)
-            if let viewController = viewController as? UIViewController {
-                present(viewController, animated: true, completion: nil)
-            }
-        }**/
+    }
+    
+    
+    @IBAction func nextClicked(_ sender: Any) {
+        print("next clicked")
+        let parameters: Parameters = [
+            "token": accountKit.currentAccessToken?.tokenString,
+            "name" : enterName.text
+        ]
+        Alamofire.request("http://192.168.1.3:3000/users/login", method: .post, parameters: parameters, encoding: URLEncoding.httpBody).responseJSON{response in
+            print(response.result.value)
+        }
     }
     
 }
