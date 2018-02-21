@@ -50,6 +50,7 @@ class LoginViewController: UIViewController{
     
     override func viewDidAppear(_ animated: Bool) {
         if(accountKit.currentAccessToken != nil){
+            
             showAddName(phoneNumber: (accountKit.currentAccessToken?.accountID)!)
         }
     }
@@ -114,17 +115,21 @@ class LoginViewController: UIViewController{
     
     // MARK: - Navigation
     @IBAction func loginWithPhone(_ sender: Any) {
-        let accountViewController = storyboard?.instantiateViewController(withIdentifier: "accountScreen") as! AccountViewController
         
-        present(accountViewController, animated: true, completion: nil)
+         if let viewController = accountKit.viewControllerForPhoneLogin(with: nil, state: nil) as AKFViewController? {
+         prepareLoginViewController(viewController)
+         if let viewController = viewController as? UIViewController {
+         present(viewController, animated: true, completion: nil)
+         }
+         }
     }
     
     
     @IBAction func nextClicked(_ sender: Any) {
         print("next clicked")
         let parameters: Parameters = [
-            "token": accountKit.currentAccessToken?.tokenString,
-            "name" : enterName.text
+            "token": accountKit.currentAccessToken?.tokenString as! String,
+            "name" : enterName.text as! String
         ]
         Alamofire.request("http://192.168.1.3:3000/users/login", method: .post, parameters: parameters, encoding: URLEncoding.httpBody).responseJSON{response in
             print(response.result.value)
