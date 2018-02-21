@@ -5,6 +5,7 @@ target 'Uber Clone' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'AccountKit'
+  pod 'Alamofire', '~> 4.6'
 
   # Pods for Uber Clone
 

@@ -77,21 +77,6 @@ class CircularTransitionPush: NSObject, UIViewControllerAnimatedTransitioning {
         maskLayerAnimation.duration = 0.5
         maskLayer.add(maskLayerAnimation, forKey: "path")
         
-        //toPresenter.uberTextIcon.animate(1).translate(-50, -50)
-        UIView.animate(withDuration: 0.7, delay: 0.0, options: .curveEaseInOut, animations: {
-            toPresenter.uberTextIconContainer.transform = CGAffineTransform(scaleX: 5,y: 5)
-            toPresenter.uberTextIconContainer.center = CGPoint(x: toPresenter.uberTextIconContainer.center.x, y: 220)
-            toPresenter.uberTextIconContainer.alpha = 1
-        }, completion: nil)
-        
-        UIView.animate(withDuration: 0.6, delay: 0.1, options: .curveEaseIn, animations: {
-            toPresenter.backgroundTeal.alpha = 1
-        }, completion: nil)
-        
-        UIView.animate(withDuration: 0.80, delay: 0.0, options: .curveEaseInOut, animations: {
-            toPresenter.bottombar.center = CGPoint(x: toPresenter.uberTextIconContainer.center.x, y: 620)
-        }, completion: nil)
-
         
     }
     

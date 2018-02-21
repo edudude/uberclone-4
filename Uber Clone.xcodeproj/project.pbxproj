@@ -149,12 +149,12 @@
 		C5F195CE2038030C00823EEE /* Uber Clone */ = {
 			isa = PBXGroup;
 			children = (
+				C5F195D82038030C00823EEE /* LaunchScreen.storyboard */,
+				C5F195D32038030C00823EEE /* Main.storyboard */,
 				C5F195CF2038030C00823EEE /* AppDelegate.swift */,
 				C5F195D12038030C00823EEE /* LoginViewController.swift */,
-				C5F195D32038030C00823EEE /* Main.storyboard */,
 				C5EBBFA5203AF53400462CE2 /* FirstViewController.swift */,
 				C5F195D62038030C00823EEE /* Assets.xcassets */,
-				C5F195D82038030C00823EEE /* LaunchScreen.storyboard */,
 				C5F195DB2038030C00823EEE /* Info.plist */,
 				C5EBBF9D203AB68F00462CE2 /* uber icon.png */,
 				C5C3C3D6203C250000671E8A /* ubertexticon.png */,
@@ -331,11 +331,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Uber Clone/Pods-Uber Clone-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Fluent/Fluent.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fluent.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

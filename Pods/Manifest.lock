@@ -1,12 +1,15 @@
 PODS:
   - AccountKit (4.30.0)
+  - Alamofire (4.6.0)
 
 DEPENDENCIES:
   - AccountKit
+  - Alamofire (~> 4.6)
 
 SPEC CHECKSUMS:
   AccountKit: 032051f90e727a8b7a532fddb84c3dc287f676c8
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
 
-PODFILE CHECKSUM: 3becc2baf7929a9b9c61785dc0325c088d418082
+PODFILE CHECKSUM: d4ad985dfd73119aa83352fc9090090ab78cbfa4
 
 COCOAPODS: 1.4.0

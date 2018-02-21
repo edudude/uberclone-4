@@ -13,6 +13,7 @@ class FirstViewController: UIViewController {
     let animationDelegate = AnimationDelegate()
 
 
+    @IBOutlet weak var uberIcon: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.delegate = animationDelegate as UINavigationControllerDelegate
@@ -26,6 +27,10 @@ class FirstViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        let size:CGFloat = 85.0
+        uberIcon.frame = CGRect(x: view.frame.width/2 - (size/2),
+                                y: view.frame.height/2 - (size/2),
+                                width: size, height: size)
     }
     
     override func viewDidAppear(_ animated: Bool) {

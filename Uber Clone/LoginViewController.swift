@@ -15,11 +15,14 @@ class LoginViewController: UIViewController{
     fileprivate var pendingLoginViewController: AKFViewController? = nil
     fileprivate var showAccountOnAppear = false
     
-    @IBOutlet weak var uberTextIcon: UIImageView!
     @IBOutlet weak var uberTextIconContainer: UIView!
-    
     @IBOutlet weak var backgroundTeal: UIView!
     @IBOutlet weak var bottombar: UIView!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var enterName: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,8 +44,49 @@ class LoginViewController: UIViewController{
                 pendingLoginViewController = nil
             }
         }
+        animateAll()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if(accountKit.currentAccessToken != nil){
+            showAddName(phoneNumber: (accountKit.currentAccessToken?.accountID)!)
+        }
     }
 
+    func animateAll() {
+        //toPresenter.uberTextIcon.animate(1).translate(-50, -50)
+        let parentFrame = view.frame
+        backgroundTeal.frame = parentFrame
+        bottombar.frame = CGRect(x: 0, y: parentFrame.height, width: parentFrame.width, height: parentFrame.height*0.3)
+        uberTextIconContainer.center.x = view.center.x
+        loginButton.center.x = view.center.x
+        loginButton.center.y = bottombar.frame.height/2
+        nextButton.center.y = bottombar.frame.height - 40
+        nextButton.center.x = bottombar.frame.width - 50
+        
+        enterName.frame = CGRect(x: 10, y: 80, width: bottombar.frame.width - 20, height: 50)
+        phoneNumberLabel.frame = CGRect(x: 10, y: 10, width: bottombar.frame.width - 20, height: 30)
+        phoneNumberLabel.text = ""
+        
+        loginButton.isHidden = false
+        nextButton.isHidden = true
+        enterName.isHidden = true
+        phoneNumberLabel.isHidden = true
+        
+        UIView.animate(withDuration: 0.7, delay: 0.0, options: .curveEaseInOut, animations: {
+            self.uberTextIconContainer.transform = CGAffineTransform(scaleX: 6,y: 6)
+            self.uberTextIconContainer.center = CGPoint(x: self.uberTextIconContainer.center.x, y: 220)
+            self.uberTextIconContainer.alpha = 1
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 0.6, delay: 0.1, options: .curveEaseIn, animations: {
+            self.backgroundTeal.alpha = 1
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 0.80, delay: 0.0, options: .curveEaseInOut, animations: {
+            self.bottombar.frame = CGRect(x: 0, y: parentFrame.height*0.7, width: parentFrame.width, height: parentFrame.height*0.3)
+        }, completion: nil)
+    }
     
     func prepareLoginViewController(_ loginViewController: AKFViewController) {
         loginViewController.delegate = self
@@ -58,7 +102,15 @@ class LoginViewController: UIViewController{
         }
     }
     
-   
+    func showAddName(phoneNumber:String){
+        loginButton.isHidden = true
+        nextButton.isHidden = false
+        enterName.isHidden = false
+        phoneNumberLabel.isHidden = false
+        
+        phoneNumberLabel.text = phoneNumber + " (verified)"
+    }
+    
     
     // MARK: - Navigation
     @IBAction func loginWithPhone(_ sender: Any) {
@@ -79,7 +131,8 @@ class LoginViewController: UIViewController{
 extension LoginViewController :  AKFViewControllerDelegate {
     
     func viewController(_ viewController: (UIViewController & AKFViewController)!, didCompleteLoginWith accessToken: AKFAccessToken!, state: String!) {
-        presentWithSegueIdentifier("showAccount", animated: true)
+        showAddName(phoneNumber: accessToken.accountID)
+        //presentWithSegueIdentifier("showAccount", animated: true)
         print(accessToken.tokenString)
         
     }
