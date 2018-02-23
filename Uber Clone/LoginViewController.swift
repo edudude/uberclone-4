@@ -27,7 +27,7 @@ class LoginViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showAccountOnAppear = accountKit.currentAccessToken != nil
+        showAccountOnAppear = Utils.getUser() != nil
         pendingLoginViewController = accountKit.viewControllerForLoginResume()
     }
     
@@ -36,7 +36,7 @@ class LoginViewController: UIViewController{
         
         if showAccountOnAppear {
             showAccountOnAppear = false
-            //presentWithSegueIdentifier("showAccount", animated: true)
+            presentWithSegueIdentifier("showAccount", animated: true)
             print(accountKit.currentAccessToken?.tokenString ?? "no access token")
         } else if let viewController = pendingLoginViewController {
             prepareLoginViewController(viewController)
@@ -128,11 +128,21 @@ class LoginViewController: UIViewController{
     @IBAction func nextClicked(_ sender: Any) {
         print("next clicked")
         let parameters: Parameters = [
-            "token": accountKit.currentAccessToken?.tokenString as! String,
-            "name" : enterName.text as! String
+            "token": accountKit.currentAccessToken?.tokenString as String!,
+            "name" : enterName.text as String!
         ]
-        Alamofire.request("http://192.168.1.3:3000/users/login", method: .post, parameters: parameters, encoding: URLEncoding.httpBody).responseJSON{response in
-            print(response.result.value)
+        Alamofire.request("http://192.168.1.3:3000/users/login", method: .post, parameters: parameters, encoding: URLEncoding.httpBody).response {response in
+            print(response.data)
+            let decoder = JSONDecoder()
+            do {
+                let user = try decoder.decode(User.self, from: response.data!)
+                _ = Utils.saveUser(user: user)
+                self.presentWithSegueIdentifier("showAccount", animated: true)
+            } catch {
+                print("error trying to convert data to JSON")
+                print(error)
+            }
+            
         }
     }
     
