@@ -15,7 +15,7 @@
 		C5C3C3D7203C250000671E8A /* ubertexticon.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C3C3D6203C250000671E8A /* ubertexticon.png */; };
 		C5D541A02041EF260000D7CC /* MapContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D5419F2041EF260000D7CC /* MapContainerViewController.swift */; };
 		C5EBBF9E203AB68F00462CE2 /* uber icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C5EBBF9D203AB68F00462CE2 /* uber icon.png */; };
-		C5EBBFA0203ABCCE00462CE2 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBBF9F203ABCCE00462CE2 /* AccountViewController.swift */; };
+		C5EBBFA0203ABCCE00462CE2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBBF9F203ABCCE00462CE2 /* MapViewController.swift */; };
 		C5EBBFA6203AF53400462CE2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBBFA5203AF53400462CE2 /* FirstViewController.swift */; };
 		C5EBBFA8203AF75300462CE2 /* AnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBBFA7203AF75300462CE2 /* AnimationDelegate.swift */; };
 		C5EBBFAE203B48FE00462CE2 /* CircularTransitionPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBBFAD203B48FE00462CE2 /* CircularTransitionPush.swift */; };
@@ -60,7 +60,7 @@
 		C5C3C3D6203C250000671E8A /* ubertexticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ubertexticon.png; sourceTree = "<group>"; };
 		C5D5419F2041EF260000D7CC /* MapContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerViewController.swift; sourceTree = "<group>"; };
 		C5EBBF9D203AB68F00462CE2 /* uber icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uber icon.png"; sourceTree = "<group>"; };
-		C5EBBF9F203ABCCE00462CE2 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		C5EBBF9F203ABCCE00462CE2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C5EBBFA5203AF53400462CE2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		C5EBBFA7203AF75300462CE2 /* AnimationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDelegate.swift; sourceTree = "<group>"; };
 		C5EBBFAD203B48FE00462CE2 /* CircularTransitionPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransitionPush.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 				C5EBBF9D203AB68F00462CE2 /* uber icon.png */,
 				C5C3C3D6203C250000671E8A /* ubertexticon.png */,
 				C5D5419F2041EF260000D7CC /* MapContainerViewController.swift */,
-				C5EBBF9F203ABCCE00462CE2 /* AccountViewController.swift */,
+				C5EBBF9F203ABCCE00462CE2 /* MapViewController.swift */,
 				C5EBBFA7203AF75300462CE2 /* AnimationDelegate.swift */,
 				C5EBBFAD203B48FE00462CE2 /* CircularTransitionPush.swift */,
 				C592A58A204035F000C6810F /* Utils.swift */,
@@ -515,7 +515,7 @@
 				C5D541A02041EF260000D7CC /* MapContainerViewController.swift in Sources */,
 				C5F195D02038030C00823EEE /* AppDelegate.swift in Sources */,
 				C5EBBFA8203AF75300462CE2 /* AnimationDelegate.swift in Sources */,
-				C5EBBFA0203ABCCE00462CE2 /* AccountViewController.swift in Sources */,
+				C5EBBFA0203ABCCE00462CE2 /* MapViewController.swift in Sources */,
 				C5EBBFAE203B48FE00462CE2 /* CircularTransitionPush.swift in Sources */,
 				C592A5882040337600C6810F /* User.swift in Sources */,
 				C592A58B204035F000C6810F /* Utils.swift in Sources */,

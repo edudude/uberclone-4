@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="-1418.4000000000001" y="-278.41079460269867"/>
         </scene>
-        <!--Account View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="FQh-es-io9">
             <objects>
-                <viewController id="aat-vZ-aJ8" customClass="AccountViewController" customModule="Uber_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aat-vZ-aJ8" customClass="MapViewController" customModule="Uber_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="edi-mb-zRC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
