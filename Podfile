@@ -6,7 +6,8 @@ target 'Uber Clone' do
   use_frameworks!
   pod 'AccountKit'
   pod 'Alamofire', '~> 4.6'
-
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
   # Pods for Uber Clone
 
   target 'Uber CloneTests' do

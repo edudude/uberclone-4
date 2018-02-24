@@ -1,15 +1,26 @@
 PODS:
   - AccountKit (4.30.0)
   - Alamofire (4.6.0)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.6.0):
+    - GoogleMaps/Base (= 2.6.0)
 
 DEPENDENCIES:
   - AccountKit
   - Alamofire (~> 4.6)
+  - GoogleMaps
+  - GooglePlaces
 
 SPEC CHECKSUMS:
   AccountKit: 032051f90e727a8b7a532fddb84c3dc287f676c8
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
 
-PODFILE CHECKSUM: d4ad985dfd73119aa83352fc9090090ab78cbfa4
+PODFILE CHECKSUM: 0d60e1c8e45efdf8f90286155c19f6b6d14e7995
 
 COCOAPODS: 1.4.0

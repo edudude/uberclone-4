@@ -19,7 +19,7 @@ class CircularTransitionPush: NSObject, UIViewControllerAnimatedTransitioning {
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
         let fromVC = transitionContext.viewController(forKey: .from)! as! FirstViewController
-        let toVC = transitionContext.viewController(forKey: .to)! as! LoginViewController
+        let toVC = transitionContext.viewController(forKey: .to)! as! UIViewController
         let snapshot = fromVC.view.snapshotView(afterScreenUpdates: false)!
         
         
@@ -46,7 +46,7 @@ class CircularTransitionPush: NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     
-    func animate(toView: UIView, toPresenter: LoginViewController) {
+    func animate(toView: UIView, toPresenter: UIViewController) {
         
         //Starting Path
         let rect = CGRect(x: toView.center.x-50,

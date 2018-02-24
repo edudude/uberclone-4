@@ -36,7 +36,7 @@ class LoginViewController: UIViewController{
         
         if showAccountOnAppear {
             showAccountOnAppear = false
-            presentWithSegueIdentifier("showAccount", animated: true)
+            gotoMapScreen()
             print(accountKit.currentAccessToken?.tokenString ?? "no access token")
         } else if let viewController = pendingLoginViewController {
             prepareLoginViewController(viewController)
@@ -112,16 +112,20 @@ class LoginViewController: UIViewController{
         phoneNumberLabel.text = phoneNumber + " (verified)"
     }
     
+    func gotoMapScreen() {
+        let mapPresenter: UINavigationController = storyboard?.instantiateViewController(withIdentifier: "accountScreen") as! UINavigationController
+        present(mapPresenter, animated: true, completion: nil)
+    }
     
     // MARK: - Navigation
     @IBAction func loginWithPhone(_ sender: Any) {
         
-         if let viewController = accountKit.viewControllerForPhoneLogin(with: nil, state: nil) as AKFViewController? {
-         prepareLoginViewController(viewController)
-         if let viewController = viewController as? UIViewController {
-         present(viewController, animated: true, completion: nil)
-         }
-         }
+        if let viewController = accountKit.viewControllerForPhoneLogin(with: nil, state: nil) as AKFViewController? {
+            prepareLoginViewController(viewController)
+            if let viewController = viewController as? UIViewController {
+                present(viewController, animated: true, completion: nil)
+            }
+        }
     }
     
     
@@ -131,13 +135,13 @@ class LoginViewController: UIViewController{
             "token": accountKit.currentAccessToken?.tokenString as String!,
             "name" : enterName.text as String!
         ]
-        Alamofire.request("http://192.168.1.3:3000/users/login", method: .post, parameters: parameters, encoding: URLEncoding.httpBody).response {response in
+        Alamofire.request("http://192.168.1.6:3000/users/login", method: .post, parameters: parameters, encoding: URLEncoding.httpBody).response {response in
             print(response.data)
             let decoder = JSONDecoder()
             do {
                 let user = try decoder.decode(User.self, from: response.data!)
                 _ = Utils.saveUser(user: user)
-                self.presentWithSegueIdentifier("showAccount", animated: true)
+                self.gotoMapScreen()
             } catch {
                 print("error trying to convert data to JSON")
                 print(error)

@@ -34,8 +34,13 @@ class FirstViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let loginViewController = storyboard?.instantiateViewController(withIdentifier: "loginScreen") as! LoginViewController
-        navigationController?.pushViewController(loginViewController, animated: true)
+        if Utils.getUser() != nil {
+            let mapPresenter = storyboard?.instantiateViewController(withIdentifier: "mapContainer") as! UIViewController
+            navigationController?.pushViewController(mapPresenter, animated: true)
+        }else {
+            let loginViewController = storyboard?.instantiateViewController(withIdentifier: "loginScreen") as! LoginViewController
+            navigationController?.pushViewController(loginViewController, animated: true)
+        }
     }
     /*
     // MARK: - Navigation
