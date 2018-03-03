@@ -128,6 +128,7 @@
                     <view key="view" contentMode="scaleToFill" id="edi-mb-zRC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.80233970210000005" green="0.26741307240000001" blue="0.16661600130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="CYy-NF-evv"/>
                     </view>
                     <navigationItem key="navigationItem" id="NVs-ty-WD6"/>
