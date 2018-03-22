@@ -10,6 +10,8 @@
 		322EB43462754C83AA02F5A5 /* Pods_Uber_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B3563F5F9F91E2DE331193 /* Pods_Uber_Clone.framework */; };
 		4F0522E8D1683CB00BCB280C /* Pods_Uber_CloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8588FA7810F5DB0F5C0A2873 /* Pods_Uber_CloneUITests.framework */; };
 		95C14F55A9339EBCD093686B /* Pods_Uber_CloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572557E47372E7F0CCEC7933 /* Pods_Uber_CloneTests.framework */; };
+		C558AD8420553E400076FCB1 /* ChoosePlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558AD8320553E400076FCB1 /* ChoosePlaceTableViewCell.swift */; };
+		C576B36C205303D10039F223 /* UIView+shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B36B205303D10039F223 /* UIView+shadow.swift */; };
 		C592A5882040337600C6810F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592A5872040337600C6810F /* User.swift */; };
 		C592A58B204035F000C6810F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C592A58A204035F000C6810F /* Utils.swift */; };
 		C5C3C3D7203C250000671E8A /* ubertexticon.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C3C3D6203C250000671E8A /* ubertexticon.png */; };
@@ -55,6 +57,8 @@
 		8588FA7810F5DB0F5C0A2873 /* Pods_Uber_CloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_CloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC4C85F7E763876709E0390 /* Pods-Uber CloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber CloneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber CloneTests/Pods-Uber CloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE3F02DE4214D16E7D76F262 /* Pods-Uber CloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber CloneUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uber CloneUITests/Pods-Uber CloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C558AD8320553E400076FCB1 /* ChoosePlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlaceTableViewCell.swift; sourceTree = "<group>"; };
+		C576B36B205303D10039F223 /* UIView+shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+shadow.swift"; sourceTree = "<group>"; };
 		C592A5872040337600C6810F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C592A58A204035F000C6810F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C5C3C3D6203C250000671E8A /* ubertexticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ubertexticon.png; sourceTree = "<group>"; };
@@ -130,6 +134,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C558AD8520553E4C0076FCB1 /* tableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C558AD8320553E400076FCB1 /* ChoosePlaceTableViewCell.swift */,
+			);
+			path = tableViewCells;
+			sourceTree = "<group>";
+		};
+		C558AD8620553F120076FCB1 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C5EBBFA7203AF75300462CE2 /* AnimationDelegate.swift */,
+				C5EBBFAD203B48FE00462CE2 /* CircularTransitionPush.swift */,
+				C592A58A204035F000C6810F /* Utils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C576B36A205303B70039F223 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C576B36B205303D10039F223 /* UIView+shadow.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		C592A5862040335A00C6810F /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +171,10 @@
 		C592A589204033FC00C6810F /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C5F195D12038030C00823EEE /* LoginViewController.swift */,
+				C5EBBFA5203AF53400462CE2 /* FirstViewController.swift */,
+				C5D5419F2041EF260000D7CC /* MapContainerViewController.swift */,
+				C5EBBF9F203ABCCE00462CE2 /* MapViewController.swift */,
 			);
 			path = viewControllers;
 			sourceTree = "<group>";
@@ -170,22 +204,18 @@
 		C5F195CE2038030C00823EEE /* Uber Clone */ = {
 			isa = PBXGroup;
 			children = (
+				C576B36A205303B70039F223 /* extensions */,
 				C592A589204033FC00C6810F /* viewControllers */,
 				C592A5862040335A00C6810F /* models */,
+				C558AD8520553E4C0076FCB1 /* tableViewCells */,
+				C558AD8620553F120076FCB1 /* utils */,
 				C5F195D82038030C00823EEE /* LaunchScreen.storyboard */,
 				C5F195D32038030C00823EEE /* Main.storyboard */,
 				C5F195CF2038030C00823EEE /* AppDelegate.swift */,
-				C5F195D12038030C00823EEE /* LoginViewController.swift */,
-				C5EBBFA5203AF53400462CE2 /* FirstViewController.swift */,
 				C5F195DB2038030C00823EEE /* Info.plist */,
+				C5F195D62038030C00823EEE /* Assets.xcassets */,
 				C5EBBF9D203AB68F00462CE2 /* uber icon.png */,
 				C5C3C3D6203C250000671E8A /* ubertexticon.png */,
-				C5D5419F2041EF260000D7CC /* MapContainerViewController.swift */,
-				C5EBBF9F203ABCCE00462CE2 /* MapViewController.swift */,
-				C5EBBFA7203AF75300462CE2 /* AnimationDelegate.swift */,
-				C5EBBFAD203B48FE00462CE2 /* CircularTransitionPush.swift */,
-				C592A58A204035F000C6810F /* Utils.swift */,
-				C5F195D62038030C00823EEE /* Assets.xcassets */,
 			);
 			path = "Uber Clone";
 			sourceTree = "<group>";
@@ -513,8 +543,10 @@
 				C5EBBFA6203AF53400462CE2 /* FirstViewController.swift in Sources */,
 				C5F195D22038030C00823EEE /* LoginViewController.swift in Sources */,
 				C5D541A02041EF260000D7CC /* MapContainerViewController.swift in Sources */,
+				C558AD8420553E400076FCB1 /* ChoosePlaceTableViewCell.swift in Sources */,
 				C5F195D02038030C00823EEE /* AppDelegate.swift in Sources */,
 				C5EBBFA8203AF75300462CE2 /* AnimationDelegate.swift in Sources */,
+				C576B36C205303D10039F223 /* UIView+shadow.swift in Sources */,
 				C5EBBFA0203ABCCE00462CE2 /* MapViewController.swift in Sources */,
 				C5EBBFAE203B48FE00462CE2 /* CircularTransitionPush.swift in Sources */,
 				C592A5882040337600C6810F /* User.swift in Sources */,
